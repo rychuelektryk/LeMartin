@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Lemartin</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
 </head>
 <body>
     <header>
@@ -26,10 +28,15 @@
     <section id="gallery">
         <h2>Galeria</h2>
         <div class="gallery">
-            <img src="images/photo1.jpg" alt="Opis zdjęcia 1">
-            <img src="images/photo2.jpg" alt="Opis zdjęcia 2">
-            <img src="images/photo3.jpg" alt="Opis zdjęcia 3">
-            <!-- Dodaj więcej zdjęć według potrzeb -->
+            <a href="images/photo1.jpg" data-lightbox="gallery" data-title="Opis zdjęcia 1">
+                <img src="images/photo1.jpg" alt="Opis zdjęcia 1">
+            </a>
+            <a href="images/photo2.jpg" data-lightbox="gallery" data-title="Opis zdjęcia 2">
+                <img src="images/photo2.jpg" alt="Opis zdjęcia 2">
+            </a>
+            <a href="images/photo3.jpg" data-lightbox="gallery" data-title="Opis zdjęcia 3">
+                <img src="images/photo3.jpg" alt="Opis zdjęcia 3">
+            </a>
         </div>
     </section>
 
