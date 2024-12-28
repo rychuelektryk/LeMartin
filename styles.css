@@ -1,11 +1,3 @@
-/* Kontener główny */
-.container {
-    max-width: 1200px; /* Możesz dostosować tę wartość */
-    margin: 0 auto;
-    padding: 0 20px; /* Opcjonalne odstępy po bokach */
-    box-sizing: border-box;
-}
-
 /* Podstawowe style */
 body {
     font-family: Arial, sans-serif;
@@ -98,8 +90,8 @@ section {
 /* Cennik - Karty usług */
 .services-container {
     display: flex;
-    flex-direction: column;
-    gap: 20px;
+    flex-direction: column; /* Ustawia usługi jeden pod drugim */
+    gap: 20px; /* Odstęp między usługami */
 }
 
 .service-card {
@@ -107,7 +99,7 @@ section {
     padding: 15px;
     border: 1px solid #ddd;
     border-radius: 5px;
-    width: 100%; /* Zapewnia, że karta zajmuje całą szerokość kontenera */
+    width: 100%; /* Zapewnia, że każda karta zajmuje pełną szerokość kontenera */
     box-sizing: border-box;
 }
 
@@ -148,12 +140,13 @@ footer {
 
 /* Responsywność */
 @media (min-width: 600px) {
+    /* Usługi pozostają w kolumnie na większych ekranach */
     .services-container {
-        flex-direction: column; /* Utrzymuje układ kolumnowy na większych ekranach */
+        flex-direction: column;
     }
 
     .service-card {
-        width: 100%; /* Zapewnia, że każda karta zajmuje pełną szerokość */
+        width: 100%; /* Pełna szerokość */
     }
 }
 
@@ -176,11 +169,12 @@ footer {
         justify-content: center;
     }
 
+    /* Usługi pozostają w kolumnie */
     .services-container {
-        flex-direction: column; /* Utrzymuje układ kolumnowy */
+        flex-direction: column;
     }
 
     .service-card {
-        width: 100%; /* Zapewnia, że każda karta zajmuje pełną szerokość */
+        width: 100%; /* Pełna szerokość */
     }
 }
