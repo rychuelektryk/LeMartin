@@ -9,233 +9,235 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/4.0.0/fancybox.umd.min.js"></script>
 </head>
 <body>
-    <header>
-        <div class="header-content">
-            <img src="images/marcin.jpeg" alt="LeMartin Marcin Matykiewicz" class="profile-pic">
-            <div class="header-text">
-                <h1>LeMartin Marcin Matykiewicz</h1>
-                <p class="subtitle">usługi remontowe</p>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <img src="images/marcin.jpeg" alt="LeMartin Marcin Matykiewicz" class="profile-pic">
+                <div class="header-text">
+                    <h1>LeMartin Marcin Matykiewicz</h1>
+                    <p class="subtitle">usługi remontowe</p>
+                </div>
             </div>
-        </div>
-        <nav>
+            <nav>
+                <ul>
+                    <li><a href="#contact-info">Kontakt</a></li>
+                    <li><a href="#services">Cennik</a></li>
+                    <li><a href="#gallery">Galeria</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Sekcja "O nas" została usunięta -->
+
+        <section id="contact-info">
+            <h2>Dane Kontaktowe</h2>
+            <p>Telefon: <a href="tel:+48577616627">577 616 627</a></p>
+            <p>Email: <a href="mailto:lemartin.matykiewicz@gmail.com">lemartin.matykiewicz@gmail.com</a></p>
+        </section>
+
+        <section id="services">
+            <h2>Cennik</h2>
+            <p>
+                Regularna cena za daną usługę jest zgodna ze średnią ceną tej usługi na terenie Gorzowa Wielkopolskiego w 2024 roku. Źródłem danych o średnich cenach rynkowych jest cyklicznie publikowany raport na stronie 
+                <a href="https://kb.pl/cenniki/miejskie/remonty-mieszkan/gorzow-wielkopolski/" target="_blank" rel="noopener noreferrer">Kalkulator Budowlany</a>.
+            </p>
+            <p>Cena regularna jest obniżona o poniższe aktualnie obowiązujące rabaty:</p>
             <ul>
-                <li><a href="#contact-info">Kontakt</a></li>
-                <li><a href="#services">Cennik</a></li>
-                <li><a href="#gallery">Galeria</a></li>
+                <li><strong>-10%</strong> - aktualnie obowiązujący rabat dla każdego klienta. Rabat ma charakter tymczasowy.</li>
+                <li><strong>-10%</strong> - rabat dla posiadacza karty mieszkańca Gorzowa Wielkopolskiego.</li>
+                <li><strong>-15%</strong> - rabat dla posiadacza karty dużej rodziny.</li>
+                <li><strong>-20%</strong> - rabat dla posiadacza karty seniora.</li>
             </ul>
-        </nav>
-    </header>
+            <p>Szczegółowe ceny podane są poniżej pod opisem każdej usługi.</p>
+                
+            <div class="services-container">
+                <!-- Usługa 1 -->
+                <div class="service-card">
+                    <h3>Gruntowanie ścian i sufitów przed tynkowaniem</h3>
+                    <p>Gruntowanie środkiem typu Unigrunt. Usługi wykonywane na ścianach i sufitach w budynkach mieszkalnych.</p>
+                    <p><strong>Średnia cena rynkowa:</strong> 8.12 zł/m²</p>
+                    <p><strong>Cena regularna:</strong> 7.52 zł/m²</p>
+                    <p><strong>Cena aktualna (-10%):</strong> 6.77 zł/m²</p>
+                    <p><strong>Cena dla posiadaczy karty mieszkańca Gorzowa (-10%):</strong> 6.77 zł/m²</p>
+                    <p><strong>Cena dla posiadaczy karty dużej rodziny (-15%):</strong> 6.39 zł/m²</p>
+                    <p><strong>Cena dla posiadaczy karty seniora (-20%):</strong> 6.02 zł/m²</p>
+                </div>
+                <!-- Usługa 2 -->
+                <div class="service-card">
+                    <h3>Układanie paneli podłogowych</h3>
+                    <p>Układanie paneli w pomieszczeniu o nieskomplikowanych kształtach. Cena obejmuje panele na zaczepy, które nie wymagają użycia kleju montażowego.</p>
+                    <p><strong>Średnia cena rynkowa:</strong> 41.50 zł/m²</p>
+                    <p><strong>Cena regularna:</strong> 38.40 zł/m²</p>
+                    <p><strong>Cena aktualna (-10%):</strong> 34.56 zł/m²</p>
+                    <p><strong>Cena dla posiadaczy karty mieszkańca Gorzowa (-10%):</strong> 34.56 zł/m²</p>
+                    <p><strong>Cena dla posiadaczy karty dużej rodziny (-15%):</strong> 32.64 zł/m²</p>
+                    <p><strong>Cena dla posiadaczy karty seniora (-20%):</strong> 30.72 zł/m²</p>
+                </div>
+                <!-- Usługa 3 -->
+                <div class="service-card">
+                    <h3>Wykonanie tynków cementowo wapiennych</h3>
+                    <p>Tradycyjne, nakładane tynki cementowo wapienne na ścianach i sufitach. Prace wykonywane w typowych budynkach mieszkalnych.</p>
+                    <p><strong>Średnia cena rynkowa:</strong> 56.90 zł/m²</p>
+                    <p><strong>Cena regularna:</strong> 52.70 zł/m²</p>
+                    <p><strong>Cena aktualna (-10%):</strong> 47.43 zł/m²</p>
+                    <p><strong>Cena dla posiadaczy karty mieszkańca Gorzowa (-10%):</strong> 47.43 zł/m²</p>
+                    <p><strong>Cena dla posiadaczy karty dużej rodziny (-15%):</strong> 44.80 zł/m²</p>
+                    <p><strong>Cena dla posiadaczy karty seniora (-20%):</strong> 42.16 zł/m²</p>
+                </div>
+                <!-- Usługa 4 -->
+                <div class="service-card">
+                    <h3>Tynki gipsowe</h3>
+                    <p>Wykonanie tynków gipsowych bez gładzi. Cena obejmuje kompleksową usługę bez dodatkowej gładzi. Prace wykonywane w budynkach o typowych kształtach.</p>
+                    <p><strong>Średnia cena rynkowa:</strong> 48.80 zł/m²</p>
+                    <p><strong>Cena regularna:</strong> 45.20 zł/m²</p>
+                    <p><strong>Cena aktualna (-10%):</strong> 40.68 zł/m²</p>
+                    <p><strong>Cena dla posiadaczy karty mieszkańca Gorzowa (-10%):</strong> 40.68 zł/m²</p>
+                    <p><strong>Cena dla posiadaczy karty dużej rodziny (-15%):</strong> 38.42 zł/m²</p>
+                    <p><strong>Cena dla posiadaczy karty seniora (-20%):</strong> 36.16 zł/m²</p>
+                </div>
+                <!-- Usługa 5 -->
+                <div class="service-card">
+                    <h3>Gładź gipsowa</h3>
+                    <p>Jednokrotne położenie gładzi wraz z przygotowaniem powierzchni. Cena obejmuje kompleksową usługę na nowych tynkach gipsowych.</p>
+                    <p><strong>Średnia cena rynkowa:</strong> 48.90 zł/m²</p>
+                    <p><strong>Cena regularna:</strong> 45.30 zł/m²</p>
+                    <p><strong>Cena aktualna (-10%):</strong> 40.77 zł/m²</p>
+                    <p><strong>Cena dla posiadaczy karty mieszkańca Gorzowa (-10%):</strong> 40.77 zł/m²</p>
+                    <p><strong>Cena dla posiadaczy karty dużej rodziny (-15%):</strong> 38.51 zł/m²</p>
+                    <p><strong>Cena dla posiadaczy karty seniora (-20%):</strong> 36.24 zł/m²</p>
+                </div>
+                <!-- Usługa 6 -->
+                <div class="service-card">
+                    <h3>Tapetowanie ścian (tapety z włókna szklanego)</h3>
+                    <p>Koszt montażu tapet z włókna szklanego. Normalny stopień skomplikowania prac, tapeta montowana jedynie na uprzednio przygotowanych ścianach.</p>
+                    <p><strong>Średnia cena rynkowa:</strong> 54.60 zł/m²</p>
+                    <p><strong>Cena regularna:</strong> 50.60 zł/m²</p>
+                    <p><strong>Cena aktualna (-10%):</strong> 45.54 zł/m²</p>
+                    <p><strong>Cena dla posiadaczy karty mieszkańca Gorzowa (-10%):</strong> 45.54 zł/m²</p>
+                    <p><strong>Cena dla posiadaczy karty dużej rodziny (-15%):</strong> 43.01 zł/m²</p>
+                    <p><strong>Cena dla posiadaczy karty seniora (-20%):</strong> 40.48 zł/m²</p>
+                </div>
+                <!-- Usługa 7 -->
+                <div class="service-card">
+                    <h3>Tapetowanie ścian (wzory)</h3>
+                    <p>Koszt montażu tapet wymagających dopasowywania wzorów. Cena nie obejmuje kosztów zakupu materiałów.</p>
+                    <p><strong>Średnia cena rynkowa:</strong> 44.90 zł/m²</p>
+                    <p><strong>Cena regularna:</strong> 41.50 zł/m²</p>
+                    <p><strong>Cena aktualna (-10%):</strong> 37.35 zł/m²</p>
+                    <p><strong>Cena dla posiadaczy karty mieszkańca Gorzowa (-10%):</strong> 37.35 zł/m²</p>
+                    <p><strong>Cena dla posiadaczy karty dużej rodziny (-15%):</strong> 35.28 zł/m²</p>
+                    <p><strong>Cena dla posiadaczy karty seniora (-20%):</strong> 33.20 zł/m²</p>
+                </div>
+                <!-- Usługa 8 -->
+                <div class="service-card">
+                    <h3>Tapetowanie ścian</h3>
+                    <p>Tapeta układana na ścianie do wysokości 2,8 metra. Cena uwzględnia pełną usługę montażu tapet na klej.</p>
+                    <p><strong>Średnia cena rynkowa:</strong> 30.70 zł/m²</p>
+                    <p><strong>Cena regularna:</strong> 28.40 zł/m²</p>
+                    <p><strong>Cena aktualna (-10%):</strong> 25.56 zł/m²</p>
+                    <p><strong>Cena dla posiadaczy karty mieszkańca Gorzowa (-10%):</strong> 25.56 zł/m²</p>
+                    <p><strong>Cena dla posiadaczy karty dużej rodziny (-15%):</strong> 24.14 zł/m²</p>
+                    <p><strong>Cena dla posiadaczy karty seniora (-20%):</strong> 22.72 zł/m²</p>
+                </div>
+                <!-- Usługa 9 -->
+                <div class="service-card">
+                    <h3>Malowanie ścian i sufitów (trzy warstwy)</h3>
+                    <p>Trzykrotne malowanie ścian i sufitów. Zastosowanie jednego koloru farb na ścianie, bez dodatkowych wzorów.</p>
+                    <p><strong>Średnia cena rynkowa:</strong> 20.00 zł/m²</p>
+                    <p><strong>Cena regularna:</strong> 18.50 zł/m²</p>
+                    <p><strong>Cena aktualna (-10%):</strong> 16.65 zł/m²</p>
+                    <p><strong>Cena dla posiadaczy karty mieszkańca Gorzowa (-10%):</strong> 16.65 zł/m²</p>
+                    <p><strong>Cena dla posiadaczy karty dużej rodziny (-15%):</strong> 15.73 zł/m²</p>
+                    <p><strong>Cena dla posiadaczy karty seniora (-20%):</strong> 14.80 zł/m²</p>
+                </div>
+                <!-- Usługa 10 -->
+                <div class="service-card">
+                    <h3>Gruntowanie ścian przed malowaniem</h3>
+                    <p>Gruntowanie ścian i sufitów przed pracami malarskimi. Cena obejmuje robociznę na powierzchniach o typowej wysokości.</p>
+                    <p><strong>Średnia cena rynkowa:</strong> 6.91 zł/m²</p>
+                    <p><strong>Cena regularna:</strong> 6.40 zł/m²</p>
+                    <p><strong>Cena aktualna (-10%):</strong> 5.76 zł/m²</p>
+                    <p><strong>Cena dla posiadaczy karty mieszkańca Gorzowa (-10%):</strong> 5.76 zł/m²</p>
+                    <p><strong>Cena dla posiadaczy karty dużej rodziny (-15%):</strong> 5.44 zł/m²</p>
+                    <p><strong>Cena dla posiadaczy karty seniora (-20%):</strong> 5.12 zł/m²</p>
+                </div>
+            </div>
+        </section>
 
-    <!-- Sekcja "O nas" została usunięta -->
+        <section id="gallery">
+            <h2>Galeria</h2>
+            <div class="gallery">
+                <a href="images/A_Photographer.jpg" data-fancybox="gallery" data-caption="A Photographer">
+                    <img src="images/A_Photographer_thumb.jpg" alt="A Photographer">
+                </a>
+                <a href="images/Apres_la_Pluie.jpg" data-fancybox="gallery" data-caption="Après la Pluie">
+                    <img src="images/Apres_la_Pluie_thumb.jpg" alt="Après la Pluie">
+                </a>
+                <a href="images/Caterpillar.jpg" data-fancybox="gallery" data-caption="Caterpillar">
+                    <img src="images/Caterpillar_thumb.jpg" alt="Caterpillar">
+                </a>
+                <a href="images/Colors_of_Autumn.jpg" data-fancybox="gallery" data-caption="Colors of Autumn">
+                    <img src="images/Colors_of_Autumn_thumb.jpg" alt="Colors of Autumn">
+                </a>
+                <a href="images/Countryside.jpg" data-fancybox="gallery" data-caption="Countryside">
+                    <img src="images/Countryside_thumb.jpg" alt="Countryside">
+                </a>
+                <a href="images/Death_Valley_-_Dunes.jpg" data-fancybox="gallery" data-caption="Death Valley - Dunes">
+                    <img src="images/Death_Valley_-_Dunes_thumb.jpg" alt="Death Valley - Dunes">
+                </a>
+                <a href="images/Despair.jpg" data-fancybox="gallery" data-caption="Despair">
+                    <img src="images/Despair_thumb.jpg" alt="Despair">
+                </a>
+                <a href="images/Eagle_Fall_Sunrise.jpg" data-fancybox="gallery" data-caption="Eagle Fall Sunrise">
+                    <img src="images/Eagle_Fall_Sunrise_thumb.jpg" alt="Eagle Fall Sunrise">
+                </a>
+                <a href="images/Green_Grass.jpg" data-fancybox="gallery" data-caption="Green Grass">
+                    <img src="images/Green_Grass_thumb.jpg" alt="Green Grass">
+                </a>
+                <a href="images/Hanging_Leaf.jpg" data-fancybox="gallery" data-caption="Hanging Leaf">
+                    <img src="images/Hanging_Leaf_thumb.jpg" alt="Hanging Leaf">
+                </a>
+                <a href="images/Jelly_Fish_3.jpg" data-fancybox="gallery" data-caption="Jelly Fish 3">
+                    <img src="images/Jelly_Fish_3_thumb.jpg" alt="Jelly Fish 3">
+                </a>
+                <a href="images/Kauai.jpg" data-fancybox="gallery" data-caption="Kauai">
+                    <img src="images/Kauai_thumb.jpg" alt="Kauai">
+                </a>
+                <a href="images/Longue_Vue.jpg" data-fancybox="gallery" data-caption="Longue Vue">
+                    <img src="images/Longue_Vue_thumb.jpg" alt="Longue Vue">
+                </a>
+                <a href="images/Lost_in_a_Field.jpg" data-fancybox="gallery" data-caption="Lost in a Field">
+                    <img src="images/Lost_in_a_Field_thumb.jpg" alt="Lost in a Field">
+                </a>
+                <a href="images/Monument_Valley_Overlook.jpg" data-fancybox="gallery" data-caption="Monument Valley Overlook">
+                    <img src="images/Monument_Valley_Overlook_thumb.jpg" alt="Monument Valley Overlook">
+                </a>
+                <a href="images/One_Wheel.jpg" data-fancybox="gallery" data-caption="One Wheel">
+                    <img src="images/One_Wheel_thumb.jpg" alt="One Wheel">
+                </a>
+                <a href="images/Open_Sky.jpg" data-fancybox="gallery" data-caption="Open Sky">
+                    <img src="images/Open_Sky_thumb.jpg" alt="Open Sky">
+                </a>
+                <a href="images/Orange_Sunset.jpg" data-fancybox="gallery" data-caption="Orange Sunset">
+                    <img src="images/Orange_Sunset_thumb.jpg" alt="Orange Sunset">
+                </a>
+                <a href="images/photo2.jpg" data-fancybox="gallery" data-caption="Photo 2">
+                    <img src="images/photo2_thumb.jpg" alt="Photo 2">
+                </a>
+                <a href="images/photo3.jpg" data-fancybox="gallery" data-caption="Photo 3">
+                    <img src="images/photo3_thumb.jpg" alt="Photo 3">
+                </a>
+                <a href="images/Stream.jpg" data-fancybox="gallery" data-caption="Stream">
+                    <img src="images/Stream_thumb.jpg" alt="Stream">
+                </a>
+                <a href="images/Yosemite_Tree.jpg" data-fancybox="gallery" data-caption="Yosemite Tree">
+                    <img src="images/Yosemite_Tree_thumb.jpg" alt="Yosemite Tree">
+                </a>
+            </div>
+        </section>
 
-    <section id="contact-info">
-        <h2>Dane Kontaktowe</h2>
-        <p>Telefon: <a href="tel:+48577616627">577 616 627</a></p>
-        <p>Email: <a href="mailto:lemartin.matykiewicz@gmail.com">lemartin.matykiewicz@gmail.com</a></p>
-    </section>
-
-    <section id="services">
-        <h2>Cennik</h2>
-        <p>
-            Regularna cena za daną usługę jest zgodna ze średnią ceną tej usługi na terenie Gorzowa Wielkopolskiego w 2024 roku. Źródłem danych o średnich cenach rynkowych jest cyklicznie publikowany raport na stronie 
-            <a href="https://kb.pl/cenniki/miejskie/remonty-mieszkan/gorzow-wielkopolski/" target="_blank" rel="noopener noreferrer">Kalkulator Budowlany</a>.
-        </p>
-        <p>Cena regularna jest obniżona o poniższe aktualnie obowiązujące rabaty:</p>
-        <ul>
-            <li><strong>-10%</strong> - aktualnie obowiązujący rabat dla każdego klienta. Rabat ma charakter tymczasowy.</li>
-            <li><strong>-10%</strong> - rabat dla posiadacza karty mieszkańca Gorzowa Wielkopolskiego.</li>
-            <li><strong>-15%</strong> - rabat dla posiadacza karty dużej rodziny.</li>
-            <li><strong>-20%</strong> - rabat dla posiadacza karty seniora.</li>
-        </ul>
-        <p>Szczegółowe ceny podane są poniżej pod opisem każdej usługi.</p>
-            
-        <div class="services-container">
-            <!-- Usługa 1 -->
-            <div class="service-card">
-                <h3>Gruntowanie ścian i sufitów przed tynkowaniem</h3>
-                <p>Gruntowanie środkiem typu Unigrunt. Usługi wykonywane na ścianach i sufitach w budynkach mieszkalnych.</p>
-                <p><strong>Średnia cena rynkowa:</strong> 8.12 zł/m²</p>
-                <p><strong>Cena regularna:</strong> 7.52 zł/m²</p>
-                <p><strong>Cena aktualna (-10%):</strong> 6.77 zł/m²</p>
-                <p><strong>Cena dla posiadaczy karty mieszkańca Gorzowa (-10%):</strong> 6.77 zł/m²</p>
-                <p><strong>Cena dla posiadaczy karty dużej rodziny (-15%):</strong> 6.39 zł/m²</p>
-                <p><strong>Cena dla posiadaczy karty seniora (-20%):</strong> 6.02 zł/m²</p>
-            </div>
-            <!-- Usługa 2 -->
-            <div class="service-card">
-                <h3>Układanie paneli podłogowych</h3>
-                <p>Układanie paneli w pomieszczeniu o nieskomplikowanych kształtach. Cena obejmuje panele na zaczepy, które nie wymagają użycia kleju montażowego.</p>
-                <p><strong>Średnia cena rynkowa:</strong> 41.50 zł/m²</p>
-                <p><strong>Cena regularna:</strong> 38.40 zł/m²</p>
-                <p><strong>Cena aktualna (-10%):</strong> 34.56 zł/m²</p>
-                <p><strong>Cena dla posiadaczy karty mieszkańca Gorzowa (-10%):</strong> 34.56 zł/m²</p>
-                <p><strong>Cena dla posiadaczy karty dużej rodziny (-15%):</strong> 32.64 zł/m²</p>
-                <p><strong>Cena dla posiadaczy karty seniora (-20%):</strong> 30.72 zł/m²</p>
-            </div>
-            <!-- Usługa 3 -->
-            <div class="service-card">
-                <h3>Wykonanie tynków cementowo wapiennych</h3>
-                <p>Tradycyjne, nakładane tynki cementowo wapienne na ścianach i sufitach. Prace wykonywane w typowych budynkach mieszkalnych.</p>
-                <p><strong>Średnia cena rynkowa:</strong> 56.90 zł/m²</p>
-                <p><strong>Cena regularna:</strong> 52.70 zł/m²</p>
-                <p><strong>Cena aktualna (-10%):</strong> 47.43 zł/m²</p>
-                <p><strong>Cena dla posiadaczy karty mieszkańca Gorzowa (-10%):</strong> 47.43 zł/m²</p>
-                <p><strong>Cena dla posiadaczy karty dużej rodziny (-15%):</strong> 44.80 zł/m²</p>
-                <p><strong>Cena dla posiadaczy karty seniora (-20%):</strong> 42.16 zł/m²</p>
-            </div>
-            <!-- Usługa 4 -->
-            <div class="service-card">
-                <h3>Tynki gipsowe</h3>
-                <p>Wykonanie tynków gipsowych bez gładzi. Cena obejmuje kompleksową usługę bez dodatkowej gładzi. Prace wykonywane w budynkach o typowych kształtach.</p>
-                <p><strong>Średnia cena rynkowa:</strong> 48.80 zł/m²</p>
-                <p><strong>Cena regularna:</strong> 45.20 zł/m²</p>
-                <p><strong>Cena aktualna (-10%):</strong> 40.68 zł/m²</p>
-                <p><strong>Cena dla posiadaczy karty mieszkańca Gorzowa (-10%):</strong> 40.68 zł/m²</p>
-                <p><strong>Cena dla posiadaczy karty dużej rodziny (-15%):</strong> 38.42 zł/m²</p>
-                <p><strong>Cena dla posiadaczy karty seniora (-20%):</strong> 36.16 zł/m²</p>
-            </div>
-            <!-- Usługa 5 -->
-            <div class="service-card">
-                <h3>Gładź gipsowa</h3>
-                <p>Jednokrotne położenie gładzi wraz z przygotowaniem powierzchni. Cena obejmuje kompleksową usługę na nowych tynkach gipsowych.</p>
-                <p><strong>Średnia cena rynkowa:</strong> 48.90 zł/m²</p>
-                <p><strong>Cena regularna:</strong> 45.30 zł/m²</p>
-                <p><strong>Cena aktualna (-10%):</strong> 40.77 zł/m²</p>
-                <p><strong>Cena dla posiadaczy karty mieszkańca Gorzowa (-10%):</strong> 40.77 zł/m²</p>
-                <p><strong>Cena dla posiadaczy karty dużej rodziny (-15%):</strong> 38.51 zł/m²</p>
-                <p><strong>Cena dla posiadaczy karty seniora (-20%):</strong> 36.24 zł/m²</p>
-            </div>
-            <!-- Usługa 6 -->
-            <div class="service-card">
-                <h3>Tapetowanie ścian (tapety z włókna szklanego)</h3>
-                <p>Koszt montażu tapet z włókna szklanego. Normalny stopień skomplikowania prac, tapeta montowana jedynie na uprzednio przygotowanych ścianach.</p>
-                <p><strong>Średnia cena rynkowa:</strong> 54.60 zł/m²</p>
-                <p><strong>Cena regularna:</strong> 50.60 zł/m²</p>
-                <p><strong>Cena aktualna (-10%):</strong> 45.54 zł/m²</p>
-                <p><strong>Cena dla posiadaczy karty mieszkańca Gorzowa (-10%):</strong> 45.54 zł/m²</p>
-                <p><strong>Cena dla posiadaczy karty dużej rodziny (-15%):</strong> 43.01 zł/m²</p>
-                <p><strong>Cena dla posiadaczy karty seniora (-20%):</strong> 40.48 zł/m²</p>
-            </div>
-            <!-- Usługa 7 -->
-            <div class="service-card">
-                <h3>Tapetowanie ścian (wzory)</h3>
-                <p>Koszt montażu tapet wymagających dopasowywania wzorów. Cena nie obejmuje kosztów zakupu materiałów.</p>
-                <p><strong>Średnia cena rynkowa:</strong> 44.90 zł/m²</p>
-                <p><strong>Cena regularna:</strong> 41.50 zł/m²</p>
-                <p><strong>Cena aktualna (-10%):</strong> 37.35 zł/m²</p>
-                <p><strong>Cena dla posiadaczy karty mieszkańca Gorzowa (-10%):</strong> 37.35 zł/m²</p>
-                <p><strong>Cena dla posiadaczy karty dużej rodziny (-15%):</strong> 35.28 zł/m²</p>
-                <p><strong>Cena dla posiadaczy karty seniora (-20%):</strong> 33.20 zł/m²</p>
-            </div>
-            <!-- Usługa 8 -->
-            <div class="service-card">
-                <h3>Tapetowanie ścian</h3>
-                <p>Tapeta układana na ścianie do wysokości 2,8 metra. Cena uwzględnia pełną usługę montażu tapet na klej.</p>
-                <p><strong>Średnia cena rynkowa:</strong> 30.70 zł/m²</p>
-                <p><strong>Cena regularna:</strong> 28.40 zł/m²</p>
-                <p><strong>Cena aktualna (-10%):</strong> 25.56 zł/m²</p>
-                <p><strong>Cena dla posiadaczy karty mieszkańca Gorzowa (-10%):</strong> 25.56 zł/m²</p>
-                <p><strong>Cena dla posiadaczy karty dużej rodziny (-15%):</strong> 24.14 zł/m²</p>
-                <p><strong>Cena dla posiadaczy karty seniora (-20%):</strong> 22.72 zł/m²</p>
-            </div>
-            <!-- Usługa 9 -->
-            <div class="service-card">
-                <h3>Malowanie ścian i sufitów (trzy warstwy)</h3>
-                <p>Trzykrotne malowanie ścian i sufitów. Zastosowanie jednego koloru farb na ścianie, bez dodatkowych wzorów.</p>
-                <p><strong>Średnia cena rynkowa:</strong> 20.00 zł/m²</p>
-                <p><strong>Cena regularna:</strong> 18.50 zł/m²</p>
-                <p><strong>Cena aktualna (-10%):</strong> 16.65 zł/m²</p>
-                <p><strong>Cena dla posiadaczy karty mieszkańca Gorzowa (-10%):</strong> 16.65 zł/m²</p>
-                <p><strong>Cena dla posiadaczy karty dużej rodziny (-15%):</strong> 15.73 zł/m²</p>
-                <p><strong>Cena dla posiadaczy karty seniora (-20%):</strong> 14.80 zł/m²</p>
-            </div>
-            <!-- Usługa 10 -->
-            <div class="service-card">
-                <h3>Gruntowanie ścian przed malowaniem</h3>
-                <p>Gruntowanie ścian i sufitów przed pracami malarskimi. Cena obejmuje robociznę na powierzchniach o typowej wysokości.</p>
-                <p><strong>Średnia cena rynkowa:</strong> 6.91 zł/m²</p>
-                <p><strong>Cena regularna:</strong> 6.40 zł/m²</p>
-                <p><strong>Cena aktualna (-10%):</strong> 5.76 zł/m²</p>
-                <p><strong>Cena dla posiadaczy karty mieszkańca Gorzowa (-10%):</strong> 5.76 zł/m²</p>
-                <p><strong>Cena dla posiadaczy karty dużej rodziny (-15%):</strong> 5.44 zł/m²</p>
-                <p><strong>Cena dla posiadaczy karty seniora (-20%):</strong> 5.12 zł/m²</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="gallery">
-        <h2>Galeria</h2>
-        <div class="gallery">
-            <a href="images/A_Photographer.jpg" data-fancybox="gallery" data-caption="A Photographer">
-                <img src="images/A_Photographer_thumb.jpg" alt="A Photographer">
-            </a>
-            <a href="images/Apres_la_Pluie.jpg" data-fancybox="gallery" data-caption="Après la Pluie">
-                <img src="images/Apres_la_Pluie_thumb.jpg" alt="Après la Pluie">
-            </a>
-            <a href="images/Caterpillar.jpg" data-fancybox="gallery" data-caption="Caterpillar">
-                <img src="images/Caterpillar_thumb.jpg" alt="Caterpillar">
-            </a>
-            <a href="images/Colors_of_Autumn.jpg" data-fancybox="gallery" data-caption="Colors of Autumn">
-                <img src="images/Colors_of_Autumn_thumb.jpg" alt="Colors of Autumn">
-            </a>
-            <a href="images/Countryside.jpg" data-fancybox="gallery" data-caption="Countryside">
-                <img src="images/Countryside_thumb.jpg" alt="Countryside">
-            </a>
-            <a href="images/Death_Valley_-_Dunes.jpg" data-fancybox="gallery" data-caption="Death Valley - Dunes">
-                <img src="images/Death_Valley_-_Dunes_thumb.jpg" alt="Death Valley - Dunes">
-            </a>
-            <a href="images/Despair.jpg" data-fancybox="gallery" data-caption="Despair">
-                <img src="images/Despair_thumb.jpg" alt="Despair">
-            </a>
-            <a href="images/Eagle_Fall_Sunrise.jpg" data-fancybox="gallery" data-caption="Eagle Fall Sunrise">
-                <img src="images/Eagle_Fall_Sunrise_thumb.jpg" alt="Eagle Fall Sunrise">
-            </a>
-            <a href="images/Green_Grass.jpg" data-fancybox="gallery" data-caption="Green Grass">
-                <img src="images/Green_Grass_thumb.jpg" alt="Green Grass">
-            </a>
-            <a href="images/Hanging_Leaf.jpg" data-fancybox="gallery" data-caption="Hanging Leaf">
-                <img src="images/Hanging_Leaf_thumb.jpg" alt="Hanging Leaf">
-            </a>
-            <a href="images/Jelly_Fish_3.jpg" data-fancybox="gallery" data-caption="Jelly Fish 3">
-                <img src="images/Jelly_Fish_3_thumb.jpg" alt="Jelly Fish 3">
-            </a>
-            <a href="images/Kauai.jpg" data-fancybox="gallery" data-caption="Kauai">
-                <img src="images/Kauai_thumb.jpg" alt="Kauai">
-            </a>
-            <a href="images/Longue_Vue.jpg" data-fancybox="gallery" data-caption="Longue Vue">
-                <img src="images/Longue_Vue_thumb.jpg" alt="Longue Vue">
-            </a>
-            <a href="images/Lost_in_a_Field.jpg" data-fancybox="gallery" data-caption="Lost in a Field">
-                <img src="images/Lost_in_a_Field_thumb.jpg" alt="Lost in a Field">
-            </a>
-            <a href="images/Monument_Valley_Overlook.jpg" data-fancybox="gallery" data-caption="Monument Valley Overlook">
-                <img src="images/Monument_Valley_Overlook_thumb.jpg" alt="Monument Valley Overlook">
-            </a>
-            <a href="images/One_Wheel.jpg" data-fancybox="gallery" data-caption="One Wheel">
-                <img src="images/One_Wheel_thumb.jpg" alt="One Wheel">
-            </a>
-            <a href="images/Open_Sky.jpg" data-fancybox="gallery" data-caption="Open Sky">
-                <img src="images/Open_Sky_thumb.jpg" alt="Open Sky">
-            </a>
-            <a href="images/Orange_Sunset.jpg" data-fancybox="gallery" data-caption="Orange Sunset">
-                <img src="images/Orange_Sunset_thumb.jpg" alt="Orange Sunset">
-            </a>
-            <a href="images/photo2.jpg" data-fancybox="gallery" data-caption="Photo 2">
-                <img src="images/photo2_thumb.jpg" alt="Photo 2">
-            </a>
-            <a href="images/photo3.jpg" data-fancybox="gallery" data-caption="Photo 3">
-                <img src="images/photo3_thumb.jpg" alt="Photo 3">
-            </a>
-            <a href="images/Stream.jpg" data-fancybox="gallery" data-caption="Stream">
-                <img src="images/Stream_thumb.jpg" alt="Stream">
-            </a>
-            <a href="images/Yosemite_Tree.jpg" data-fancybox="gallery" data-caption="Yosemite Tree">
-                <img src="images/Yosemite_Tree_thumb.jpg" alt="Yosemite Tree">
-            </a>
-        </div>
-    </section>
-
-    <footer></footer>
+        <footer></footer>
+    </div>
 
     <!-- Inicjalizacja Fancybox z dodatkowymi opcjami -->
     <script>
