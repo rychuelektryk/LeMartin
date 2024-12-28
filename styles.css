@@ -19,6 +19,20 @@ header {
     align-items: center;
 }
 
+.header-text {
+    text-align: center;
+}
+
+.header-text h1 {
+    margin: 10px 0 5px 0;
+    font-size: 2em;
+}
+
+.header-text .subtitle {
+    font-size: 1.2em;
+    color: #ddd;
+}
+
 .profile-pic {
     width: 150px;
     height: 150px;
@@ -145,6 +159,10 @@ footer {
 
     .profile-pic {
         margin-right: 20px;
+    }
+
+    .header-text {
+        text-align: left;
     }
 
     nav ul {
