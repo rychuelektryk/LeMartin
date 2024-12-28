@@ -10,10 +10,14 @@
 </head>
 <body>
     <header>
-        <h1>Portfolio Lemartin</h1>
+        <div class="header-content">
+            <img src="images/profile.jpg" alt="Marcin Matykiewicz" class="profile-pic">
+            <h1>LeMartin Marcin Matykiewicz</h1>
+        </div>
         <nav>
             <ul>
                 <li><a href="#about">O nas</a></li>
+                <li><a href="#services">Cennik</a></li>
                 <li><a href="#gallery">Galeria</a></li>
                 <li><a href="#contact">Kontakt</a></li>
             </ul>
@@ -23,30 +27,84 @@
     <section id="about">
         <h2>O nas</h2>
         <p>Witamy w Lemartin! Specjalizujemy się w profesjonalnych usługach wykończeniowych. Naszym celem jest dostarczanie najwyższej jakości usług dostosowanych do indywidualnych potrzeb każdego klienta.</p>
+        <p>Usługi wykonywane tylko na terenie Gorzowa Wielkopolskiego.</p>
+    </section>
+
+    <section id="contact-info">
+        <h2>Dane Kontaktowe</h2>
+        <p>Telefon: <a href="tel:+48123456789">123-456-789</a></p>
+        <p>Email: <a href="mailto:kontakt@lemartin.pl">kontakt@lemartin.pl</a></p>
+    </section>
+
+    <section id="services">
+        <h2>Cennik</h2>
+        <div class="services-container">
+            <!-- Przykładowa usługa -->
+            <div class="service-card">
+                <h3>Malowanie ścian i sufitów</h3>
+                <p>Profesjonalne malowanie wnętrz, w tym ścian, sufitów oraz innych powierzchni. Używamy wysokiej jakości farb zapewniających trwałość i estetykę.</p>
+                <p><strong>Średnia cena rynkowa:</strong> 50 PLN/m² (Źródło: Kalkulator Budowlany, 2024)</p>
+                <p><strong>Cena regularna:</strong> 50 PLN/m²</p>
+                <p><strong>Cena aktualna (-10%):</strong> 45 PLN/m²</p>
+                <p><strong>Cena dla posiadaczy karty mieszkańca Gorzowa (-10%):</strong> 45 PLN/m²</p>
+                <p><strong>Cena dla posiadaczy karty dużej rodziny (-15%):</strong> 42.5 PLN/m²</p>
+                <p><strong>Cena dla posiadaczy karty seniora (-20%):</strong> 40 PLN/m²</p>
+            </div>
+            <!-- Dodaj więcej kart usług według powyższego wzoru -->
+            <div class="service-card">
+                <h3>Układanie płytek ceramicznych</h3>
+                <p>Profesjonalne układanie płytek na ścianach i podłogach, zapewniające estetyczny wygląd i trwałość.</p>
+                <p><strong>Średnia cena rynkowa:</strong> 80 PLN/m² (Źródło: Kalkulator Budowlany, 2024)</p>
+                <p><strong>Cena regularna:</strong> 80 PLN/m²</p>
+                <p><strong>Cena aktualna (-10%):</strong> 72 PLN/m²</p>
+                <p><strong>Cena dla posiadaczy karty mieszkańca Gorzowa (-10%):</strong> 72 PLN/m²</p>
+                <p><strong>Cena dla posiadaczy karty dużej rodziny (-15%):</strong> 68 PLN/m²</p>
+                <p><strong>Cena dla posiadaczy karty seniora (-20%):</strong> 64 PLN/m²</p>
+            </div>
+            <!-- Możesz kontynuować dodawanie kolejnych usług -->
+        </div>
     </section>
 
     <section id="gallery">
         <h2>Galeria</h2>
         <div class="gallery">
             <a href="images/photo1.jpg" data-fancybox="gallery" data-caption="Opis zdjęcia 1">
-                <img src="images/photo1.jpg" alt="Opis zdjęcia 1">
+                <img src="images/photo1_thumb.jpg" alt="Opis zdjęcia 1">
             </a>
             <a href="images/photo2.jpg" data-fancybox="gallery" data-caption="Opis zdjęcia 2">
-                <img src="images/photo2.jpg" alt="Opis zdjęcia 2">
+                <img src="images/photo2_thumb.jpg" alt="Opis zdjęcia 2">
             </a>
             <a href="images/photo3.jpg" data-fancybox="gallery" data-caption="Opis zdjęcia 3">
-                <img src="images/photo3.jpg" alt="Opis zdjęcia 3">
+                <img src="images/photo3_thumb.jpg" alt="Opis zdjęcia 3">
             </a>
+            <!-- Dodaj więcej zdjęć według powyższego wzoru -->
         </div>
-    </section>
-
-    <section id="contact">
-        <h2>Kontakt</h2>
-        <p>Skontaktuj się z nami pod numerem telefonu: 123-456-789 lub wyślij e-mail na adres: kontakt@lemartin.pl</p>
     </section>
 
     <footer>
         <p>&copy; 2024 Lemartin. Wszelkie prawa zastrzeżone.</p>
     </footer>
+
+    <!-- Inicjalizacja Fancybox z dodatkowymi opcjami -->
+    <script>
+        Fancybox.bind("[data-fancybox='gallery']", {
+            Toolbar: {
+                display: [
+                    "close",
+                ],
+            },
+            Thumbs: {
+                autoStart: false,
+            },
+            Carousel: {
+                infinite: false,
+            },
+            // Dostosowanie przycisków na PC
+            dragToClose: false,
+            Image: {
+                zoom: true,
+            },
+        });
+    </script>
 </body>
 </html>
