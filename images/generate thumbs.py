@@ -6,13 +6,18 @@ def create_thumbnails(directory):
     for filename in os.listdir(directory):
         filepath = os.path.join(directory, filename)
 
+        # Pomijamy plik "marcin.jpeg"
+        if filename.lower() == "marcin.jpeg":
+            print(f"Pomijam plik: {filename}")
+            continue
+
         # Sprawdzamy, czy plik jest obrazem
         if os.path.isfile(filepath) and filename.lower().endswith((".jpg", ".jpeg", ".png", ".bmp", ".gif")):
             try:
                 # Otwieramy obraz
                 with Image.open(filepath) as img:
-                    # Zachowujemy proporcje, dostosowując najdłuższy bok do 200 pikseli
-                    img.thumbnail((200, 200))
+                    # Zachowujemy proporcje, dostosowując najdłuższy bok do 400 pikseli
+                    img.thumbnail((400, 400))
 
                     # Generujemy nową nazwę pliku z _thumb
                     base, ext = os.path.splitext(filename)
