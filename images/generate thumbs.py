@@ -19,15 +19,18 @@ def create_thumbnails(directory):
                     # Zachowujemy proporcje, dostosowując najdłuższy bok do 400 pikseli
                     img.thumbnail((400, 400))
 
-                    # Generujemy nową nazwę pliku z _thumb
-                    base, ext = os.path.splitext(filename)
-                    new_filename = f"{base}_thumb{ext}"
+                    # Generujemy nową nazwę pliku z _thumb, nadpisując istniejące miniaturki
+                    if "_thumb" in filename.lower():
+                        new_filename = filename
+                    else:
+                        base, ext = os.path.splitext(filename)
+                        new_filename = f"{base}_thumb{ext}"
                     new_filepath = os.path.join(directory, new_filename)
 
-                    # Zapisujemy miniaturkę w tym samym formacie
+                    # Zapisujemy miniaturkę w tym samym formacie, nadpisując istniejące pliki
                     img.save(new_filepath, format=img.format)
 
-                    print(f"Miniaturka utworzona: {new_filename}")
+                    print(f"Miniaturka utworzona lub nadpisana: {new_filename}")
             except Exception as e:
                 print(f"Błąd podczas przetwarzania pliku {filename}: {e}")
 
