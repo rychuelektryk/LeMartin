@@ -1,3 +1,10 @@
+/*
+    CACHE-BUSTING REMINDER:
+    After editing this file, bump the `?v=YYYY-MM-DD` date in `index.html` on the
+    `<link rel="stylesheet" href="styles.css?v=...">` line (and use the SAME date on
+    the `<script src="js/lightbox.js?v=...">` line). Otherwise visitors will keep
+    seeing the cached old stylesheet after deploy.
+*/
 :root {
     --color-bg: #f6f5f1;
     --color-surface: #ffffff;

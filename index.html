@@ -33,7 +33,14 @@
     <link rel="icon" type="image/jpeg" href="images/marcin.jpeg">
     <link rel="apple-touch-icon" href="images/marcin.jpeg">
 
-    <link rel="stylesheet" href="styles.css">
+    <!--
+        CACHE-BUSTING — IMPORTANT FOR ANYONE EDITING THIS SITE (incl. future Claude):
+        When you change `styles.css` OR `js/lightbox.js`, bump the date in BOTH `?v=...`
+        query strings below (today's date, format YYYY-MM-DD). Browsers cache by full URL,
+        so without bumping the value visitors keep seeing the old file from cache after a
+        deploy. Use the SAME date for both so it's obvious which "version" they belong to.
+    -->
+    <link rel="stylesheet" href="styles.css?v=2026-05-03">
 
     <script type="application/ld+json">
     {
@@ -301,7 +308,8 @@
         <div class="lightbox-counter" aria-live="polite"></div>
     </div>
 
-    <script src="js/lightbox.js" defer></script>
+    <!-- Same cache-busting rule as the CSS link above — keep the ?v= date in sync. -->
+    <script src="js/lightbox.js?v=2026-05-03" defer></script>
     <script>
         document.getElementById('year').textContent = new Date().getFullYear();
     </script>

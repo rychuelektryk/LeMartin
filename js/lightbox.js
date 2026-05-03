@@ -1,3 +1,10 @@
+/*
+    CACHE-BUSTING REMINDER:
+    After editing this file, bump the `?v=YYYY-MM-DD` date in `index.html` on the
+    `<script src="js/lightbox.js?v=...">` line (and use the SAME date on the
+    `<link rel="stylesheet" href="styles.css?v=...">` line). Otherwise visitors will
+    keep running the cached old script after deploy.
+*/
 (function () {
     'use strict';
 
